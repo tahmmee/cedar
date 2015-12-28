@@ -1,0 +1,6 @@
+[submodule "cmocka"]
+	path = cmocka
+	url = git://git.cryptomilk.org/projects/cmocka.git
+[submodule "forestdb"]
+	path = forestdb
+	url = https://github.com/couchbase/forestdb.git
