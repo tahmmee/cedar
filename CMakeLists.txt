@@ -10,8 +10,8 @@ find_package(Git)
 if(GIT_FOUND)
   message("git found: ${GIT_EXECUTABLE}")
 endif()
-execute_process(COMMAND ${GIT_EXECUTABLE} submodule update
-  COMMAND ${GIT_EXECUTABLE} submodule sync
+execute_process(COMMAND ${GIT_EXECUTABLE} submodule init
+  COMMAND ${GIT_EXECUTABLE} submodule update
   WORKING_DIRECTORY ../)
 
 # tests
